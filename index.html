@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano henkiin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Soiva hetki</h1>
+        <p class="tagline">Herätän käyttämättömän pianosi henkiin</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <h2>Soiva hetki</h2>
+        <p class="highlight">
+          Onko sinulla, tuttavallasi tai esimerkiksi yksinäisellä vanhuksella
+          kotona piano käyttämättömänä? Voin tulla herättämään sen henkiin, ja
+          soittamaan/improvisoimaan tuttuja sävelmiä toiveiden mukaan.
+        </p>
+        <p class="highlight">
+          Teen soittamista myös omaksi ilokseni, joten en edellytä mitään
+          korvausta – maksu täysin vapaaehtoinen.
+        </p>
+        <p class="highlight">
+          Olen täysin itseoppinut pianon soittaja, ja soitan pelkästään
+          korvakuulolta. En siis osaa soittaa nuoteista. En ole ammattipianisti.
+        </p>
+      </section>
+
+      <section class="video-section">
+        <h2>Kuuntele soittoani</h2>
+        <div class="video-container">
+          <!-- Tähän voit lisätä oman videosi upotuskoodin -->
+          <div class="video-placeholder">
+            <p>Tähän tulee demovideo</p>
+            <button id="play-button">▶</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Mitä voin tarjota?</h2>
+        <div class="service-cards">
+          <div class="card">
+            <div class="card-icon">🎹</div>
+            <h3>Tuttuja sävelmiä</h3>
+            <p>
+              Soitan toiveiden mukaan mm. perinteisiä suomalaisia sävelmiä,
+              lastenlauluja, joululauluja jne. Voit toivoa vapaasti.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✨</div>
+            <h3>Improvisaatiota</h3>
+            <p>Tunnelmallista improvisaatiota hetkeen sopien.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎵</div>
+            <h3>Yhteissoittoa</h3>
+            <p>
+              Soitatko jotakin muuta instrumenttia ja haluat rinnalle pianoa
+              mausteeksi
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Ota yhteyttä</h2>
+        <p>
+          Kiinnostuitko? Ota yhteyttä suoraan puhelimitse nolla-neljä-neljä 534
+          2112 ja katsotaan mitä keksittäisiin! Vaihtoehtoisesti voit lähettää
+          viestiä alla olevasta lomakkeesta.
+        </p>
+        <form action="https://formspree.io/f/xjkykbez" method="POST">
+          <div class="form-group">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Viesti</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Lähetä viesti</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Pianon Elämää</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
